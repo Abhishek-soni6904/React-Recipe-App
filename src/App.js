@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Navbar from "./components/Navbar";
+import { Outlet } from "react-router-dom";
+import { useState, useEffect } from "react";
 function App() {
+  const [searchValue, setSearchValue] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [recipes, setRecipes] = useState([]);
+  const fetchRecipes = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch(
+        `https://forkify-api.herokuapp.com/api/v2/recipes?search=${searchValue}`
+      );
+      const data = await response.json();
+      if (!response.ok) throw new Error("Failed to Fetch");
+      if (data.data.recipes && data.data.recipes.length)
+        setRecipes(data.data.recipes);
+      else throw new Error("No recipes found");
+      setError("");
+    } catch (error) {
+      setError(error.message);
+      setRecipes([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+  useEffect(() => {
+    if (!searchValue.trim()) return;
+    fetchRecipes();
+  }, [searchValue]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar searchValue={searchValue} setSearchValue={setSearchValue} />
+      <Outlet context={{ recipes, loading, error }} />
+    </>
   );
 }
 

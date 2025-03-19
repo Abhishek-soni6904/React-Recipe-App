@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Recipe App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Recipe App**, a simple and interactive application that allows users to explore, search, and save their favorite recipes. This app provides an intuitive interface to view detailed recipe instructions, ingredients, and cooking steps with ease.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+✅ **Home Page** – Search for recipes and browse a list of suggested recipes.\
+✅ **Recipe Details Page** – View full recipe details, including ingredients and instructions.\
+✅ **Favorites Page** – Save and manage favorite recipes for easy access later.\
+✅ **Fully Responsive** – Works seamlessly across mobile, tablet, and desktop screens.
 
-### `npm start`
+## 🛠️ Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **Frontend**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React.js** – Component-based UI framework used for building the app.
+- **React Router** – Enables seamless client-side routing.
+- **React Hooks**
+  - `useState` – Manages application state (search term, recipes, favorites, etc.).
+  - `useEffect` – Fetches data and handles side effects.
+  - `useRef` – Accesses the input field directly for clearing input after search.
+- **Local Storage** – Saves favorite recipes persistently across user sessions.
+- **Lucide Icons** – Provides scalable and stylish icons.
+- **Tailwind CSS** – Utility-first CSS framework for styling.
 
-### `npm test`
+### **API**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Forkify API** – The app fetches recipe data from [Forkify API](https://forkify-api.herokuapp.com).
 
-### `npm run build`
+## 📌 Key Features Implemented
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🔍 **Recipe Search** – Users can search for recipes using keywords.\
+📜 **Recipe Listing** – Display recipes with essential details like title, publisher, and image.\
+📖 **Recipe Details Page** – Show complete recipe details, including ingredients and instructions.\
+❤️ **Favorites Management** – Add/remove recipes from favorites, stored using local storage.\
+⚠️ **Error Handling** – Provides feedback when API errors occur or no results are found.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔧 Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository and install dependencies:
 
-### `npm run eject`
+```bash
+# Clone the repository
+git clone https://github.com/Abhishek-soni6904/recipe-app.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Navigate to the project folder
+cd recipe-app
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies
+npm install  # or yarn install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Start the development server
+npm start  # or yarn start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Open the app in the browser
+http://localhost:3000
+```
 
-## Learn More
+## 🏗️ App Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **Main Files**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **`index.js`** – Renders the root component of the application.
+- **`App.js`** – The core application component that includes search functionality and routes.
 
-### Code Splitting
+### **Components**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📌 **Navbar.jsx** – Contains navigation links and the search bar.\
+🏠 **Home.jsx** – Displays search results and handles loading/errors.\
+🍽️ **RecipeDetails.jsx** – Shows detailed recipe information and allows adding to favorites.\
+💖 **Favorites.jsx** – Lists all saved favorite recipes from local storage.\
+📝 **RecipeItem.jsx** – Represents individual recipe cards used in the home and favorites sections.
 
-### Analyzing the Bundle Size
+## ⚡ How It Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **1️⃣ Home Page**
 
-### Making a Progressive Web App
+- Users can search for recipes using a search bar.
+- Displays a list of matching recipes fetched from the API.
+- Handles loading and error messages efficiently.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### **2️⃣ Favorites Page**
 
-### Advanced Configuration
+- Displays saved favorite recipes.
+- If no recipes are saved, a friendly message is displayed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### **3️⃣ Recipe Details Page**
 
-### Deployment
+- Clicking on a recipe shows complete details (ingredients, and link to check the recipe from original source etc.).
+- Users can add or remove the recipe from favorites.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔗 Connect on LinkedIn
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Check out my LinkedIn post about this project: [LinkedIn Post](#)
