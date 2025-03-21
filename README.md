@@ -35,7 +35,7 @@ Welcome to the **Recipe App**, a simple and interactive application that allows 
 ❤️ **Favorites Management** – Add/remove recipes from favorites, stored using local storage.\
 ⚠️ **Error Handling** – Provides feedback when API errors occur or no results are found.
 
-## 🔧 Installation
+## 🔧 Setup & Installation
 
 Clone the repository and install dependencies:
 
