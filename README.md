@@ -89,6 +89,7 @@ http://localhost:3000
 - Clicking on a recipe shows complete details (ingredients, and link to check the recipe from original source etc.).
 - Users can add or remove the recipe from favorites.
 
-## 🔗 Connect on LinkedIn
+## 🔗 Connect on LinkedIn  
+Curious to see the all this **Components** in action? Check out my LinkedIn post, where I showcase a video demo of the project! 🚀  
 
-Check out my LinkedIn post about this project: [LinkedIn Post](#)
+🎥 **Watch the demo here:** [LinkedIn Post](https://www.linkedin.com/posts/abhishek-soni-662028331_react-javascript-webdevelopment-activity-7308387636333682688-rbVK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFN5q6oBYUN1lZGdeZiR4oHDbon9ejqNVRk)
