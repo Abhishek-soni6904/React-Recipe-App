@@ -41,7 +41,7 @@ Clone the repository and install dependencies:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Abhishek-soni6904/recipe-app.git
+git clone https://github.com/Abhishek-soni6904/React-Recipe-App.git
 
 # Navigate to the project folder
 cd recipe-app
