@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-Practice/static/css/main.f01b75e8.css",
-    "main.js": "/React-Practice/static/js/main.f686472e.js",
-    "static/js/453.679e8433.chunk.js": "/React-Practice/static/js/453.679e8433.chunk.js",
-    "index.html": "/React-Practice/index.html",
-    "main.f01b75e8.css.map": "/React-Practice/static/css/main.f01b75e8.css.map",
-    "main.f686472e.js.map": "/React-Practice/static/js/main.f686472e.js.map",
-    "453.679e8433.chunk.js.map": "/React-Practice/static/js/453.679e8433.chunk.js.map"
+    "main.css": "/React-Recipe-App/static/css/main.f01b75e8.css",
+    "main.js": "/React-Recipe-App/static/js/main.0d9ebaf4.js",
+    "static/js/453.679e8433.chunk.js": "/React-Recipe-App/static/js/453.679e8433.chunk.js",
+    "index.html": "/React-Recipe-App/index.html",
+    "main.f01b75e8.css.map": "/React-Recipe-App/static/css/main.f01b75e8.css.map",
+    "main.0d9ebaf4.js.map": "/React-Recipe-App/static/js/main.0d9ebaf4.js.map",
+    "453.679e8433.chunk.js.map": "/React-Recipe-App/static/js/453.679e8433.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f01b75e8.css",
-    "static/js/main.f686472e.js"
+    "static/js/main.0d9ebaf4.js"
   ]
 }
